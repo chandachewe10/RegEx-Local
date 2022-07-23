@@ -200,7 +200,7 @@ d. `/` - End regex. <br>
 
 
 
-### B. 8 Atleast Characters Long, & Contains Atleast One Uppercase, One Lower Uppercase, A Number, & A Special Character  <br>
+### B. 8 Atleast Characters Long, & Contains Atleast One Uppercase, One Lowercase, A Number, & A Special Character  <br>
 - This is the recommended way of passwords implementations. The regex below might help  <br>
 `/(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[_@$!%*#?&]).{8,}$/` <br>
 
