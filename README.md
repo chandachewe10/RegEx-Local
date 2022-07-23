@@ -1,4 +1,4 @@
-## About ReGex Local
+## About RegEx Local
 
 This is PHP RegEx which can assist developers specifically in Zambia to validate users where those users are using local content variables such as local names, Local National ID's, Local Mobile Numbers etc. The RegEx can be extended and applied to other foreign data as well such as foreign names, passwords etc. PHP RegEx is used here however it can easily be converted to other RegExes as well such as Java, JavaScript etc.
 
@@ -15,10 +15,10 @@ c. `[5|6|7]` - The number then should be followed with either 5 or 6 or 7 <br>
 d. `[0-9]{7}$` - The number should end with 7 digits with each digit between 0 and 9. <br>
 e. `/` - Close a regex <br>
 
-### Use Case - PHP
+### Use Case Example - PHP
 `if (preg_match('/^(09|07)[5|6|7][0-9]{7}$/'),$phone){` <br> 
-    //Phone number matches with either Mtn Zambia/Airtel Zambia/Zamtel <br>
-`}` <br>
+   ` //Phone number matches with either Mtn Zambia/Airtel Zambia/Zamtel` <br>
+   `}` <br>
 `else{` <br>
    ` echo 'Your phone number is invalid. Your phone must begin with either 096 0r 097 or 095'; ` <br>
 `}` <br>
@@ -54,9 +54,9 @@ h. `/` - Foward slash. <br>
 i. `\d{1}$` - The NRC should end with 1 digit after the last foward slash. Please note that this is equivalant to `[0-9]{1}`  <br>
 j. `/` - End a regex <br>
 
-### Use Case - PHP <br>
+### Use Case Example- PHP <br>
 `if (preg_match('/^(\d{6})\/\d{2}\/\d{1}$/'),$nrc){` <br>
-    //NRC Matches with Zambian NRC Standard <br>
+   ` //NRC Matches with Zambian NRC Standard` <br>
 `}`
 `else{` <br>
    ` echo 'Your NRC is invalid. Your NRC must be in this format ******/**/*'; ` <br>
@@ -89,9 +89,9 @@ c. `{2,50}$` - The first name should be between two to fifty characters long. <b
 d. `/` - End regex. <br>
  
 
-### Use Case - PHP <br>
+### Use Case Example - PHP <br>
 `if (preg_match('/^[a-zA-Z]{2,50}$/'),$first_name){` <br>
-    //Matches names like Chanda, Chewe, musonda, Mwamba etc <br>
+    `//Matches names like Chanda, Chewe, musonda, Mwamba etc` <br>
 `}` <br>
 `else{` <br>
    ` echo 'Your name is invalid. Ensure your first name does not contain spaces'; ` <br>
@@ -121,7 +121,7 @@ g. `/` - Close a regex <br>
 
 ### Use Case - PHP <br>
 `if (preg_match('/([a-zA-Z]){2,50}\s([a-zA-Z]){2,50}$/'),$full_name){` <br>
-    //Matches names like Chanda Chewe, musonda Mwamba, etc <br>
+    `//Matches names like Chanda Chewe, musonda Mwamba, etc `<br>
 `}` <br>
 `else{` <br>
    ` echo 'Your Full Name is invalid'; ` <br>
@@ -150,7 +150,7 @@ g. `/` - Close a regex <br>
 
 ### Use Case - PHP <br>
 `if (preg_match('/^([a-zA-Z]){2,256}\s(([a-zA-Z]){1,256}\s)?([a-zA-Z]){2,50}$/'),$full_names){` <br>
-    //Matches names like Chanda henschel Chewe, musonda kalunga Mwamba etc <br>
+   ` //Matches names like Chanda henschel Chewe, musonda kalunga Mwamba etc` <br>
 `}` <br>
 `else{` <br>
    ` echo 'Your Full Name is invalid'; ` <br>
@@ -186,7 +186,7 @@ d. `/` - End regex. <br>
 
 ### Use Case - PHP <br>
 `if (preg_match('/^(\d{8,})$/'),$password){` <br>
-    //Matches weak passwords 12345678, 277477388292092, etc <br>
+    `//Matches weak passwords 12345678, 277477388292092, etc` <br>
 `}` <br>
 `else{` <br>
    ` echo 'Your password must contain more than 8 digits'; ` <br>
@@ -221,7 +221,7 @@ l. `/` - End regex. <br>
 
 ### Use Case - PHP <br>
 `if (preg_match('/(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[_@$!%*#?&]).{8,}$/'),$password){` <br>
-    //Matches strong passwords <br>
+   ` //Matches strong passwords` <br>
 `}` <br>
 `else{` <br>
    ` echo 'Your password must be 8 characters long and must contain an uppercase, lowecase, number and a special character'; ` <br>
