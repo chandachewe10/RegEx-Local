@@ -33,6 +33,10 @@ Note: If you want to validate the mobile phone number to international format wh
 
 
 
+
+
+
+
 2. ## Validating Zambia National Identity Number(s) (NRC) <br>
 
 Zambia National Identity Number consists of 9 digits and two foward slashes in this format `******/**/*`. This regEx seems to be working. <br>
@@ -61,6 +65,10 @@ j. `/` - End a regex <br>
 
 ### Use Case - PHP LARAVEL <br>
 `'nrc' => ['regex:/^(\d{6})\/\d{2}\/\d{1}$/'],` <br>
+
+
+
+
 
 
 
@@ -151,6 +159,10 @@ g. `/` - Close a regex <br>
 
 ### Use Case - PHP LARAVEL <br>
 `'first_name' => ['regex:/^([a-zA-Z]){2,256}\s(([a-zA-Z]){1,256}\s)?([a-zA-Z]){2,50}$/'],` <br>
+
+
+
+
 
 
 
