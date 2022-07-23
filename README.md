@@ -1,4 +1,4 @@
-## About Filtration
+## About ReGex Local
 
 This is PHP RegEx which can assist developers specifically in Zambia to validate users where those users are using local content variables such as local names, Local National ID's, Local Mobile Numbers etc. The RegEx can be extended and applied to other foreign data as well such as foreign names, passwords etc. PHP RegEx is used here however it can easily be converted to other RegExes as well such as Java, JavaScript etc.
 
@@ -8,7 +8,7 @@ Zambia local mobile phone numbers consists of 10 digits and starts with either 0
 
 `/^(09|07)[5|6|7][0-9]{7}$/`
 
-### Meaning
+### Meaning <br>
 a. `/` - Start a regex
 b. `^(09|07)` - The phone number should start with either 09 or 07
 c. `[5|6|7]` - The number then should be followed with either 5 or 6 or 7
