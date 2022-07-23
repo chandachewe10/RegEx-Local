@@ -34,7 +34,7 @@ Note: If you want to validate the mobile phone number to international format wh
 
 
 
-
+<br><br><br><br>
 
 
 2. ## Validating Zambia National Identity Number(s) (NRC) <br>
@@ -68,7 +68,7 @@ j. `/` - End a regex <br>
 
 
 
-
+<br><br><br><br>
 
 
 
@@ -163,7 +163,7 @@ g. `/` - Close a regex <br>
 
 
 
-
+<br><br><br><br>
 
 
 
